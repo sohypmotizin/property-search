@@ -17,9 +17,8 @@ ZILLOW_URL = "https://www.zillow.com/homes/for_rent/1-_beds/?searchQueryState=%7
              "%22%3A1%7D%7D%2C%22isListVisible%22%3Atrue%2C%22mapZoom%22%3A12%7D "
 
 header = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) "
-                  "Chrome/92.0.4515.131 YaBrowser/21.8.0.1716 Yowser/2.5 Safari/537.36",
-    "Accept-Language": "ru,fr;q=0.9"
+    "User-Agent": "***",
+    "Accept-Language": "***"
 }
 
 response = requests.get(url=ZILLOW_URL, headers=header)
@@ -53,7 +52,7 @@ for address in list_addresses:
     new_addresses.append(address)
 
 for i in range(len(new_addresses)):
-    chrome_driver_path = "/Users/anastasia/DevLab/chromedriver"
+    chrome_driver_path = "***"
     driver = webdriver.Chrome(executable_path=chrome_driver_path)
     driver.get(GOOGLE_FORM)
 
